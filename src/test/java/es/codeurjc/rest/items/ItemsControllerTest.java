@@ -18,14 +18,18 @@ public class ItemsControllerTest {
 		boolean itemCheked = false;
 		item.setDescription(itemDescription);
 		item.setChecked(itemCheked);
+		
+		System.out.println("Given");
 
 		// WHEN
 
 		Item postedItem = itemsRepository.postItem(item);
-		
+		System.out.println("When");
+
 		// THEN
 
 		assertThat(postedItem.getDescription()).isEqualTo(itemDescription);
+		System.out.println("Then");
 	}
 
 }
