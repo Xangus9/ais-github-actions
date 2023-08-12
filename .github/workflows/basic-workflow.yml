@@ -19,8 +19,8 @@ jobs:
       - name: Download Maven 3.6.3
         run: |
           wget https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
-          tar xzvf apache-maven-3.6.3-bin.tar.gz
-          export PATH=$PWD/apache-maven-3.6.3/bin:$PATH
+          tar xzvf apache-maven-3.9.1-bin.tar.gz
+          export PATH=$PWD/apache-maven-3.9.1/bin:$PATH
 
       - name: Build and Test
         run: |
