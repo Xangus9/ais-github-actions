@@ -2,8 +2,7 @@ name: Build and Test Maven Spring Boot App
 
 on:
   push:
-    branches:
-      - main
+    
 
 jobs:
   build:
